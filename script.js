@@ -123,9 +123,8 @@ const displayMovements = function (acc, sort = false) {
 
     const html = `
       <div class="movements__row">
-        <div class="movements__type movements__type--${type}">${
-      i + 1
-    } ${type}</div>
+        <div class="movements__type movements__type--${type}">${i + 1
+      } ${type}</div>
         <div class="movements__date">${displayDate}</div>
         <div class="movements__value">${formattedMov}</div>
       </div>
@@ -233,9 +232,8 @@ btnLogin.addEventListener("click", function (e) {
 
   if (currentAccount?.pin === +inputLoginPin.value) {
     // Display UI and message
-    labelWelcome.textContent = `Welcome back, ${
-      currentAccount.owner.split(" ")[0]
-    }`;
+    labelWelcome.textContent = `Welcome back, ${currentAccount.owner.split(" ")[0]
+      }`;
     containerApp.style.opacity = 100;
 
     // Create current date and time
